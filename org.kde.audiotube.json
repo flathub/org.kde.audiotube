@@ -31,9 +31,14 @@
             "builddir": true,
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/pybind/pybind11",
-                    "tag": "v2.9.1"
+                    "type": "archive",
+                    "url": "https://github.com/pybind/pybind11/archive/refs/tags/v2.9.2.tar.gz",
+                    "sha256": "6bd528c4dbe2276635dc787b6b1f2e5316cf6b49ee3e150264e455a0d68d19c1",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 13384,
+                        "url-template": "https://github.com/pybind/pybind11/archive/refs/tags/v$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -48,7 +53,13 @@
                 {
                     "type": "archive",
                     "url": "https://download.kde.org/stable/plasma-mobile/22.06/audiotube-22.06.tar.xz",
-                    "sha256": "802acef347f3e8c68671a4025d4306bffe91d2a177a78a13c345690b52660019"
+                    "sha256": "802acef347f3e8c68671a4025d4306bffe91d2a177a78a13c345690b52660019",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 261558,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/plasma-mobile/$version/audiotube-$version.tar.xz"
+                    }
                 }
             ]
         }
