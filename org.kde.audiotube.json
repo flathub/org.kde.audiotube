@@ -59,10 +59,6 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/plasma-mobile/$version/audiotube-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-ytmusic-Include-iostream.patch"
                 }
             ]
         }
