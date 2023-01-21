@@ -1,0 +1,39 @@
+From e40b9f6e10525085be4e4c3ad2135d1c10e54c47 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jonah=20Br=C3=BCchert?= <jbb@kaidan.im>
+Date: Sat, 21 Jan 2023 11:08:18 +0100
+Subject: [PATCH] Adapt to youtube changes
+
+---
+ src/ytmusic.cpp | 2 +-
+ src/ytmusic.h   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/ytmusic.cpp b/src/ytmusic.cpp
+index a1766df..a407139 100644
+--- a/src/ytmusic.cpp
++++ b/src/ytmusic.cpp
+@@ -144,7 +144,7 @@ album::Track extract_album_track(py::handle track) {
+ 
+ video_info::Format extract_format(py::handle format) {
+     return {
+-        optional_key<int>(format, "quality"),
++        optional_key<float>(format, "quality"),
+         format["url"].cast<std::string>(),
+         format["vcodec"].cast<std::string>(),
+         format["acodec"].cast<std::string>()
+diff --git a/src/ytmusic.h b/src/ytmusic.h
+index 113a2f9..ba7c24c 100644
+--- a/src/ytmusic.h
++++ b/src/ytmusic.h
+@@ -234,7 +234,7 @@ struct Playlist {
+ 
+ namespace video_info {
+ struct Format {
+-    std::optional<int> quality;
++    std::optional<float> quality;
+     std::string url;
+     std::string vcodec;
+     std::string acodec;
+-- 
+GitLab
+
