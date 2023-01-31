@@ -59,10 +59,6 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/plasma-mobile/$version/audiotube-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "e40b9f6e10525085be4e4c3ad2135d1c10e54c47.patch"
                 }
             ]
         }
