@@ -51,18 +51,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma-mobile/22.11/audiotube-22.11.tar.xz",
-                    "sha256": "7884d6879f9615ee0f743d50cc5ee43409fac79953009b739121d1b4d153473d",
+                    "url": "https://download.kde.org/stable/plasma-mobile/23.01.0/audiotube-23.01.0.tar.xz",
+                    "sha256": "fda0111e1e6712c7972f34d0486627d64590a7d8df24c7c756af7e6423965e32",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/plasma-mobile/$version/audiotube-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "e40b9f6e10525085be4e4c3ad2135d1c10e54c47.patch"
                 }
             ]
         }
