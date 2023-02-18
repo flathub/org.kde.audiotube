@@ -12,5 +12,5 @@ if [ -z ${TAG} ]; then
 fi
 
 for file in $(ls generated/); do
-	wget -O generated/$file https://invent.kde.org/plasma-mobile/audiotube/-/raw/${TAG}/flatpak/${file}
+	wget -O generated/$file https://invent.kde.org/multimedia/audiotube/-/raw/${TAG}/flatpak/${file}
 done
