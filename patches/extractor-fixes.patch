@@ -1,0 +1,52 @@
+From bb4a24e21dc197fbe0eaaf73a5803aa649693c94 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jonah=20Br=C3=BCchert?= <jbb@kaidan.im>
+Date: Fri, 7 Apr 2023 16:32:41 +0200
+Subject: [PATCH] Make search::Video views attribute optional
+
+Fixes #27
+---
+ src/example/main.cpp | 2 +-
+ src/ytmusic.cpp      | 5 +++--
+ src/ytmusic.h        | 2 +-
+ 3 files changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/src/ytmusic.cpp b/src/ytmusic.cpp
+index 4a3ece50..68c3c8ec 100644
+--- a/src/ytmusic.cpp
++++ b/src/ytmusic.cpp
+@@ -276,16 +276,17 @@ std::optional<artist::Artist::Section<T>> extract_artist_section(py::handle arti
+ 
+ std::optional<search::SearchResultItem> extract_search_result(py::handle result) {
+     const auto resultType = result["resultType"].cast<std::string>();
++
+     if (resultType == "video") {
+         return search::Video {
+             {
+                 result["videoId"].cast<std::string>(),
+                 result["title"].cast<std::string>(),
+                 extract_py_list<meta::Artist>(result["artists"]),
+-                result["views"].cast<std::string>(),
++                result["duration"].cast<std::string>(),
+                 extract_py_list<meta::Thumbnail>(result["thumbnails"])
+             },
+-            result["duration"].cast<std::string>()
++            optional_key<std::string>(result, "views")
+         };
+     } else if (resultType == "song") {
+         return search::Song {
+diff --git a/src/ytmusic.h b/src/ytmusic.h
+index f474538e..2449fabb 100644
+--- a/src/ytmusic.h
++++ b/src/ytmusic.h
+@@ -48,7 +48,7 @@ struct Media {
+ };
+ 
+ struct Video : public Media {
+-    std::string views;
++    std::optional<std::string> views;
+ };
+ 
+ struct Playlist {
+-- 
+GitLab
+
