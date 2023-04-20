@@ -57,7 +57,7 @@
                         "type": "anitya",
                         "project-id": 261558,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/plasma-mobile/$version/audiotube-$version.tar.xz"
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
                 },
                 {
