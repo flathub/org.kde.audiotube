@@ -20,6 +20,7 @@
     "modules": [
         "generated/python3-yt-dlp.json",
         "generated/python3-ytmusicapi.json",
+        "generated/kirigami-addons.json",
         {
             "name": "pybind11",
             "config-opts": [
@@ -51,18 +52,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma-mobile/23.01.0/audiotube-23.01.0.tar.xz",
-                    "sha256": "fda0111e1e6712c7972f34d0486627d64590a7d8df24c7c756af7e6423965e32",
+                    "url": "https://download.kde.org/stable/release-service/23.04.0/src/audiotube-23.04.0.tar.xz",
+                    "sha256": "b122b887e0c87a3bb9779e322f35c4beb548a4457d4dc8a4ad64fc26955e9d51",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/plasma-mobile/$version/audiotube-$version.tar.xz"
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/extractor-fixes.patch"
                 }
             ]
         }
