@@ -20,6 +20,7 @@
     "modules": [
         "generated/python3-yt-dlp.json",
         "generated/python3-ytmusicapi.json",
+        "generated/kirigami-addons.json",
         {
             "name": "pybind11",
             "config-opts": [
