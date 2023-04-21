@@ -68,6 +68,14 @@
                 {
                     "type": "patch",
                     "path": "0002-Make-search-Video-views-attribute-optional.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0003-Fix-some-extractor-bugs.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0004-Fix-extracting-null-search-result.patch"
                 }
             ]
         }
