@@ -1,7 +1,7 @@
 From 9bced575dc66732b10c079d1280a944ca95013b7 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Jonah=20Br=C3=BCchert?= <jbb@kaidan.im>
 Date: Fri, 7 Apr 2023 16:32:41 +0200
-Subject: [PATCH 2/2] Make search::Video views attribute optional
+Subject: [PATCH 2/4] Make search::Video views attribute optional
 
 Fixes #27
 ---
