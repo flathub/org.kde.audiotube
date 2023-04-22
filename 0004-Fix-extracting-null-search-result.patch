@@ -1,7 +1,7 @@
 From ed87d3654cff9172c7b701a4e913ce90d988abe8 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Mathis=20Br=C3=BCchert?= <mbb@kaidan.im>
 Date: Fri, 31 Mar 2023 16:01:39 +0200
-Subject: [PATCH 4/4] Fix extracting null search result
+Subject: [PATCH 4/5] Fix extracting null search result
 
 ---
  src/ytmusic.cpp | 3 +++

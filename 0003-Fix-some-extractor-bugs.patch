@@ -1,7 +1,7 @@
 From b4d184d7a3d94b26d32260cab8e4c90f4de35256 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Mathis=20Br=C3=BCchert?= <mbb@kaidan.im>
 Date: Fri, 31 Mar 2023 15:42:50 +0200
-Subject: [PATCH 3/4] Fix some extractor bugs
+Subject: [PATCH 3/5] Fix some extractor bugs
 
 ---
  src/example/main.cpp | 2 +-
