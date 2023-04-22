@@ -76,6 +76,10 @@
                 {
                     "type": "patch",
                     "path": "0004-Fix-extracting-null-search-result.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "0005-If-controls-style-is-not-set-assume-platform-provide.patch"
                 }
             ]
         }
