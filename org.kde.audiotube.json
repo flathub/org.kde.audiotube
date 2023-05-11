@@ -61,26 +61,6 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-Work-around-API-break-in-kirigami-addons.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0002-Make-search-Video-views-attribute-optional.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0003-Fix-some-extractor-bugs.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0004-Fix-extracting-null-search-result.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "0005-If-controls-style-is-not-set-assume-platform-provide.patch"
                 }
             ]
         }
