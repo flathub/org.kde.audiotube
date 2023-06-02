@@ -61,6 +61,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "df0cb9f43c7abbe132ddb04789cfbb2affaea8b0.patch"
                 }
             ]
         }
