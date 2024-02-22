@@ -8,8 +8,8 @@
     "sources": [
         {
             "type": "archive",
-            "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-0.11.0.tar.xz",
-            "sha256": "05296c5afbe6804308bf9c0d2751f3b748b40d00fa784946d1dcdf3af4bffbad",
+            "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.0.0.tar.xz",
+            "sha256": "aee66f3ef97e54208ce0cefb0d1a9a27c915b9c53032c84a4364fb3b76518d61",
             "x-checker-data": {
                 "type": "anitya",
                 "project-id": 242933,
