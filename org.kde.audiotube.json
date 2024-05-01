@@ -19,9 +19,47 @@
         "/share/cmake/"
     ],
     "modules": [
-        "generated/python3-yt-dlp.json",
         "generated/python3-ytmusicapi.json",
-        "generated/kirigami-addons.json",
+        {
+            "name": "kirigami-addons",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=Release"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.1.0.tar.xz",
+                    "sha256": "8ef352499139616b3142a6d7a92ab23749c568403ece8d854f064a941d085536",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 242933,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "yt-dlp",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --no-dependencies --prefix=/app *.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d6/dd/40b79e6864709a47fa781206589bf1c91383d8e277b848a0e7cbd5a00b00/yt_dlp-2024.4.9-py3-none-any.whl",
+                    "sha256": "d6ff6798bd114cc48763564fcb2f296464ec1604f731e69b07a8814c89b170a2",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "yt-dlp",
+                        "packagetype": "bdist_wheel"
+                    }
+                }
+            ]
+        },
         {
             "name": "qcoro",
             "buildsystem": "cmake-ninja",
