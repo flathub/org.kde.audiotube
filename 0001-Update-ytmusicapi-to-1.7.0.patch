@@ -1,0 +1,39 @@
+From 0677018cfbb23c8096bed1338145f7b25c15cb5a Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jonah=20Br=C3=BCchert?= <jbb@kaidan.im>
+Date: Sun, 5 May 2024 19:06:59 +0200
+Subject: [PATCH] Update ytmusicapi to 1.7.0
+
+---
+ flatpak/python3-yt-dlp.json     | 8 ++++----
+ flatpak/python3-ytmusicapi.json | 8 ++++----
+ requirements.txt                | 2 +-
+ src/ytmusic.h                   | 2 +-
+ 4 files changed, 10 insertions(+), 10 deletions(-)
+
+diff --git a/requirements.txt b/requirements.txt
+index a4b0dc29..eeb2f01b 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -3,5 +3,5 @@
+ #
+ # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
+ 
+-ytmusicapi==1.5.1
++ytmusicapi==1.7.0
+ yt-dlp
+diff --git a/src/ytmusic.h b/src/ytmusic.h
+index 7b8b02e1..c0072240 100644
+--- a/src/ytmusic.h
++++ b/src/ytmusic.h
+@@ -12,7 +12,7 @@
+ #include <vector>
+ #include <memory>
+ 
+-constexpr auto TESTED_YTMUSICAPI_VERSION = "1.5.1";
++constexpr auto TESTED_YTMUSICAPI_VERSION = "1.7.0";
+ 
+ struct YTMusicPrivate;
+ 
+-- 
+2.43.0
+
