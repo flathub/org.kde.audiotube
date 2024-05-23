@@ -18,7 +18,7 @@ index a4b0dc29..eeb2f01b 100644
  #
  # SPDX-License-Identifier: GPL-2.0-only OR GPL-3.0-only OR LicenseRef-KDE-Accepted-GPL
  
--ytmusicapi==1.5.1
+-ytmusicapi==1.6.0
 +ytmusicapi==1.7.0
  yt-dlp
 diff --git a/src/ytmusic.h b/src/ytmusic.h
@@ -29,7 +29,7 @@ index 7b8b02e1..c0072240 100644
  #include <vector>
  #include <memory>
  
--constexpr auto TESTED_YTMUSICAPI_VERSION = "1.5.1";
+-constexpr auto TESTED_YTMUSICAPI_VERSION = "1.6.0";
 +constexpr auto TESTED_YTMUSICAPI_VERSION = "1.7.0";
  
  struct YTMusicPrivate;
