@@ -114,8 +114,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/pybind/pybind11/archive/refs/tags/v2.13.4.tar.gz",
-                    "sha256": "efc901aa0aab439a3fea6efeaf930b5a349fb06394bf845c64ce15a9cf8f0240",
+                    "url": "https://github.com/pybind/pybind11/archive/refs/tags/v2.13.5.tar.gz",
+                    "sha256": "b1e209c42b3a9ed74da3e0b25a4f4cd478d89d5efbb48f04b277df427faf6252",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13384,
@@ -134,8 +134,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.05.2/src/audiotube-24.05.2.tar.xz",
-                    "sha256": "5a2bb1e9726f41957a628f08a364f04122c1d81b7bb8d28fe790ee4f1f3d3c44",
+                    "url": "https://download.kde.org/stable/release-service/24.08.0/src/audiotube-24.08.0.tar.xz",
+                    "sha256": "05cd5523ba3b3067c05f31a763c8081fcc9b441b0b1054ed789704348be29709",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
