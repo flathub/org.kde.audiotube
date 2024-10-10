@@ -30,8 +30,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.4.0.tar.xz",
-                    "sha256": "56e3ceb52055b5603320ea08b27d3673d32a391a8d58646d998227d8b51f0a93",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.5.0.tar.xz",
+                    "sha256": "f9dfd191022b633ea3348f84730d7158a159dfe49668dba0a9e9bd678ac44e54",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 242933,
@@ -134,8 +134,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.08.1/src/audiotube-24.08.1.tar.xz",
-                    "sha256": "fa384cb76ab493aef05afd2da20b0cd23324bfa8cc33127cf7a72ea2f41f5545",
+                    "url": "https://download.kde.org/stable/release-service/24.08.2/src/audiotube-24.08.2.tar.xz",
+                    "sha256": "357e58afdfc0ef130c4a079255861db72aec54023b794ba0cd0f6652455d03df",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
