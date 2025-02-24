@@ -1,7 +1,7 @@
 {
     "id": "org.kde.audiotube",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "command": "audiotube",
     "finish-args": [
@@ -10,7 +10,8 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--socket=pulseaudio",
-        "--device=dri"
+        "--device=dri",
+        "--own-name=org.mpris.MediaPlayer2.AudioTube"
     ],
     "separate-locales": false,
     "cleanup": [
@@ -18,8 +19,69 @@
         "/share/cmake/"
     ],
     "modules": [
-        "generated/python3-yt-dlp.json",
         "generated/python3-ytmusicapi.json",
+        {
+            "name": "kirigami-addons",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=Release"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.7.0.tar.xz",
+                    "sha256": "7d854975185cf740de486d84f1e2ec3e4eadb66ac9fb897214cba9ab8cc492b1",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 242933,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "yt-dlp",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --no-dependencies --prefix=/app *.whl"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/9e/45/6d1b759e68f5363b919828fb0e0c167a1cd5003b5b7c74cc0f0c2096be4f/yt_dlp-2025.2.19-py3-none-any.whl",
+                    "sha256": "3ed218eaeece55e9d715afd41abc450dc406ee63bf79355169dfde312d38fdb8",
+                    "x-checker-data": {
+                        "type": "pypi",
+                        "name": "yt-dlp",
+                        "packagetype": "bdist_wheel"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "futuresql",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DQT_MAJOR_VERSION=6"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/futuresql/futuresql-0.1.1.tar.xz",
+                    "sha256": "e44ed8d5a9618b3ca7ba2983ed9c5f7572e6e0a5b199f94868834b71ccbebd43",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 368957,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/futuresql/futuresql-$version.tar.xz"
+                    }
+                }
+            ]
+        },
         {
             "name": "pybind11",
             "config-opts": [
@@ -31,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/pybind/pybind11/archive/refs/tags/v2.10.4.tar.gz",
-                    "sha256": "832e2f309c57da9c1e6d4542dedd34b24e4192ecb4d62f6f4866a737454c9970",
+                    "url": "https://github.com/pybind/pybind11/archive/refs/tags/v2.13.6.tar.gz",
+                    "sha256": "e08cb87f4773da97fa7b5f035de8763abc656d87d5773e62f6da0587d1f0ec20",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13384,
@@ -51,13 +113,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/plasma-mobile/23.01.0/audiotube-23.01.0.tar.xz",
-                    "sha256": "fda0111e1e6712c7972f34d0486627d64590a7d8df24c7c756af7e6423965e32",
+                    "url": "https://download.kde.org/stable/release-service/24.12.2/src/audiotube-24.12.2.tar.xz",
+                    "sha256": "ce7df872dab4605ce86cd39d39f261d6c0e29716b79151cebf919cd959c0b46d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/plasma-mobile/$version/audiotube-$version.tar.xz"
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
                 },
                 {
