@@ -106,6 +106,7 @@
         {
             "name": "audiotube",
             "config-opts": [
+                "-DBUILD_TESTING=OFF",
                 "-DPYBIND11_FINDPYTHON=ON"
             ],
             "buildsystem": "cmake-ninja",
