@@ -5,13 +5,13 @@
     "sdk": "org.kde.Sdk",
     "command": "audiotube",
     "finish-args": [
+        "--device=dri",
+        "--own-name=org.mpris.MediaPlayer2.AudioTube",
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
-        "--socket=wayland",
         "--socket=pulseaudio",
-        "--device=dri",
-        "--own-name=org.mpris.MediaPlayer2.AudioTube"
+        "--socket=wayland"
     ],
     "separate-locales": false,
     "cleanup": [
