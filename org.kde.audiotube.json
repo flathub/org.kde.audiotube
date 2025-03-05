@@ -134,6 +134,10 @@
                 {
                     "type": "patch",
                     "path": "patches/0003-Update-tested-ytmusicapi-version-to-1.10.1.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/0004-Update-to-ytmusicapi-1.10.2.patch"
                 }
             ]
         }
