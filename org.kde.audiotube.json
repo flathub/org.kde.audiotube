@@ -114,18 +114,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.12.3/src/audiotube-24.12.3.tar.xz",
-                    "sha256": "67eb1db939c12054e5bc22bc1fffad01e027cb4775360eff9b800d6fff2a17be",
+                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/audiotube-25.04.0.tar.xz",
+                    "sha256": "e286ca6106f05cc404e16892aeef79f5704346241b126aa596345926382df358",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/0004-Update-to-ytmusicapi-1.10.2.patch"
                 }
             ]
         }
