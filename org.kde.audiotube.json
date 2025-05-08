@@ -114,18 +114,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.04.0/src/audiotube-25.04.0.tar.xz",
-                    "sha256": "e286ca6106f05cc404e16892aeef79f5704346241b126aa596345926382df358",
+                    "url": "https://download.kde.org/stable/release-service/25.04.1/src/audiotube-25.04.1.tar.xz",
+                    "sha256": "1bd42686a3725669a6ed46a18ae94200858834710f0dcee621ea164349b80816",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/0001-Also-find-audio-tracks-with-unknown-acodec.patch"
                 }
             ]
         }
