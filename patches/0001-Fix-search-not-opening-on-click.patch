@@ -1,0 +1,33 @@
+From c807ba68ac6147579df7c1290a22616eee99104f Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jonah=20Br=C3=BCchert?= <jbb@kaidan.im>
+Date: Thu, 24 Apr 2025 11:24:36 +0200
+Subject: [PATCH] Fix search not opening on click
+
+---
+ src/contents/ui/main.qml | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/src/contents/ui/main.qml b/src/contents/ui/main.qml
+index be9083f2..515ac046 100644
+--- a/src/contents/ui/main.qml
++++ b/src/contents/ui/main.qml
+@@ -25,7 +25,7 @@ Kirigami.ApplicationWindow {
+         blur.setBlur(sidebar, true);
+     }
+ 
+-    contentItem.parent.z: 2 // HACK: So contents can cover the header. This is only necessary since Qt 6.9.
++    contentItem.parent.z: (playerFooter.contentY === 0) ? 0 : 2 // HACK: So contents can cover the header. This is only necessary since Qt 6.9.
+ 
+     pageStack.columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
+ 
+@@ -263,7 +263,6 @@ Kirigami.ApplicationWindow {
+         }
+     }
+ 
+-
+     pageStack.anchors.bottomMargin: wideScreen ? playerFooter.minimizedPlayerHeight: playerFooter.minimizedPlayerHeight+bottombar.height
+     pageStack.anchors.leftMargin: wideScreen ? sidebar.width:0
+ 
+-- 
+2.49.0
+
