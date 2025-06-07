@@ -1,7 +1,7 @@
 {
     "id": "org.kde.audiotube",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.8",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "audiotube",
     "finish-args": [
@@ -122,6 +122,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/0001-Fix-search-not-opening-on-click.patch"
                 }
             ]
         }
