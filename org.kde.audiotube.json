@@ -16,7 +16,8 @@
     "separate-locales": false,
     "cleanup": [
         "/include/",
-        "/share/cmake/"
+        "/share/cmake/",
+        "*.a"
     ],
     "modules": [
         "generated/python3-ytmusicapi.json",
@@ -107,7 +108,8 @@
             "name": "audiotube",
             "config-opts": [
                 "-DBUILD_TESTING=OFF",
-                "-DPYBIND11_FINDPYTHON=ON"
+                "-DPYBIND11_FINDPYTHON=ON",
+                "-DCMAKE_BUILD_TYPE=Release"
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
