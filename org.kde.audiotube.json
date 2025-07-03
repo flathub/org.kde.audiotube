@@ -116,8 +116,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.04.2/src/audiotube-25.04.2.tar.xz",
-                    "sha256": "b83e24d54cef95d90f9ce1bea5426c8d00b93867098e6d366789eb4dfaeb0fea",
+                    "url": "https://download.kde.org/stable/release-service/25.04.3/src/audiotube-25.04.3.tar.xz",
+                    "sha256": "af73db4fb56d539abd520f00f651fd9c2bf88bb463acfda3abf10c4535f777d9",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
