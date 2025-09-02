@@ -15,9 +15,13 @@
     ],
     "separate-locales": false,
     "cleanup": [
-        "/include/",
-        "/share/cmake/",
-        "*.a"
+        "/include",
+        "/lib/cmake",
+        "/share/cmake",
+        "/share/fish",
+        "/share/kdevappwizard",
+        "/share/pkgconfig",
+        "/share/zsh"
     ],
     "modules": [
         "generated/python3-ytmusicapi.json",
