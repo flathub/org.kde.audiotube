@@ -99,8 +99,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.3/src/audiotube-25.08.3.tar.xz",
-                    "sha256": "ee0ecfa43b9f6b9aabb583dee0e201f2969271fa77b9adbc1dabb34ac149b5ee",
+                    "url": "https://download.kde.org/stable/release-service/25.12.1/src/audiotube-25.12.1.tar.xz",
+                    "sha256": "5549c2adcf877bf768776a4ffc83945a76a519a422b337758b4afa96f9c17ca7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 261558,
@@ -110,7 +110,7 @@
                 },
                 {
                     "type": "patch",
-                    "path": "0001-Update-dependencies.patch"
+                    "path": "0001-Remove-empty-KDE-supporters-tag.patch"
                 }
             ]
         }
