@@ -1,0 +1,24 @@
+From 255488c74dc9755484dbe6936d037132b3db8acd Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Jonah=20Br=C3=BCchert?= <jbb@kaidan.im>
+Date: Thu, 8 Jan 2026 22:53:30 +0100
+Subject: [PATCH] Remove empty KDE::supporters tag
+
+---
+ org.kde.audiotube.appdata.xml | 3 ---
+ 1 file changed, 3 deletions(-)
+
+diff --git a/org.kde.audiotube.appdata.xml b/org.kde.audiotube.appdata.xml
+index db1c9f4b..43804ac0 100644
+--- a/org.kde.audiotube.appdata.xml
++++ b/org.kde.audiotube.appdata.xml
+@@ -233,7 +233,4 @@ SPDX-License-Identifier: CC0-1.0
+     <color type="primary" scheme_preference="light">#f19a9a</color>
+     <color type="primary" scheme_preference="dark">#5a0c0c</color>
+   </branding>
+-  <custom>
+-    <value key="KDE::supporters"> </value>
+-  </custom>
+ </component>
+-- 
+2.52.0
+
