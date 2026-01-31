@@ -25,6 +25,7 @@
     ],
     "modules": [
         "generated/python3-ytmusicapi.json",
+        "deno.json",
         {
             "name": "yt-dlp",
             "buildsystem": "simple",
