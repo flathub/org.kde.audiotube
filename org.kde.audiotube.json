@@ -17,9 +17,12 @@
     "cleanup": [
         "/include",
         "/lib/cmake",
+        "share/bash-completion",
         "/share/cmake",
+        "/share/doc",
         "/share/fish",
         "/share/kdevappwizard",
+        "/share/man",
         "/share/pkgconfig",
         "/share/zsh"
     ],
@@ -75,6 +78,7 @@
             ],
             "buildsystem": "cmake-ninja",
             "builddir": true,
+            "cleanup": ["*"],
             "sources": [
                 {
                     "type": "archive",
