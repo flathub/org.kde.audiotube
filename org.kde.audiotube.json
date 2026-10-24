@@ -110,7 +110,7 @@
                     "sha256": "04b9b641eb6fdcd07c77299c1f0c4c4803a36014e5cca8f326e28e3a5a31e43c",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 261558,
+                        "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/audiotube-$version.tar.xz"
                     }
